@@ -26,17 +26,24 @@
     border: none;
     color: white;
     padding: 15px 30px;
-    text-align: center;
+    padding-left: 50px; /* Increased left padding to accommodate image */
+    text-align: left; /* Align text to the left */
     text-decoration: none;
-    display: inline-block;
+    display: inline-flex; /* Changed to inline-flex for better alignment */
+    align-items: center; /* Center items vertically */
     font-size: 16px;
     margin: 10px;
     border-radius: 10px;
-    width: 150px; /* Fixed width for all buttons */
+    width: 180px; /* Adjusted width to give more space */
+    overflow: hidden; /* Prevents content from spilling out */
   }
   .button img {
-    vertical-align: middle;
     margin-right: 10px;
+    max-height: 30px; /* Limit the height to not exceed the button */
+    max-width: 30px; /* Limit the width to not exceed the button */
+    height: auto; /* Maintain aspect ratio */
+    width: auto; /* Maintain aspect ratio */
+    margin-left: -35px; /* Adjusts the image position to the left */
   }
 </style>
 </head>
@@ -44,16 +51,16 @@
   <div class="container">
     <h1>TravelEZ</h1>
     <button class="button" onclick="location.href='budget.html'">
-      <img src="budget_icon.png" alt=""> Budget
+      <img src="Front-end files/budget_icon.png" alt="Budget Icon"> Budget
     </button>
     <button class="button" onclick="location.href='expenses.html'">
-      <img src="expenses_icon.png" alt=""> Expenses
+      <img src="expenses_icon.png" alt="Expenses Icon"> Expenses
     </button>
     <button class="button" onclick="location.href='tips.html'">
-      <img src="tips_icon.png" alt=""> Tips
+      <img src="tips_icon.png" alt="Tips Icon"> Tips
     </button>
     <button class="button" onclick="location.href='help.html'">
-      <img src="help_icon.png" alt=""> Help
+      <img src="help_icon.png" alt="Help Icon"> Help
     </button>
   </div>
 </body>
