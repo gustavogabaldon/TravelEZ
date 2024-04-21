@@ -1,67 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TravelEZ</title>
-<style>
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #2E3A8C;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  .container {
-    text-align: center;
-  }
-  h1 {
-    margin-bottom: 20px;
-  }
-  .button {
-    background-color: #4C5B9C;
-    border: none;
-    color: white;
-    padding: 15px 30px;
-    padding-left: 50px; /* Increased left padding to accommodate image */
-    text-align: left; /* Align text to the left */
-    text-decoration: none;
-    display: inline-flex; /* Changed to inline-flex for better alignment */
-    align-items: center; /* Center items vertically */
-    font-size: 16px;
-    margin: 10px;
-    border-radius: 10px;
-    width: 180px; /* Adjusted width to give more space */
-    overflow: hidden; /* Prevents content from spilling out */
-  }
-  .button img {
-    margin-right: 10px;
-    max-height: 30px; /* Limit the height to not exceed the button */
-    max-width: 30px; /* Limit the width to not exceed the button */
-    height: auto; /* Maintain aspect ratio */
-    width: auto; /* Maintain aspect ratio */
-    margin-left: -35px; /* Adjusts the image position to the left */
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelEZ</title>
+    <link rel="stylesheet" href="css/style.css"> 
 </head>
 <body>
-  <div class="container">
-    <h1>TravelEZ</h1>
-    <button class="button" onclick="location.href='budget.html'">
-      <img src="Front-end files/budget_icon.png" alt="Budget Icon"> Budget
-    </button>
-    <button class="button" onclick="location.href='expenses.html'">
-      <img src="expenses_icon.png" alt="Expenses Icon"> Expenses
-    </button>
-    <button class="button" onclick="location.href='tips.html'">
-      <img src="tips_icon.png" alt="Tips Icon"> Tips
-    </button>
-    <button class="button" onclick="location.href='help.html'">
-      <img src="help_icon.png" alt="Help Icon"> Help
-    </button>
-  </div>
+    <div class="container">
+        <h1>TravelEZ</h1>
+        <a href="ButtonFiles/budget.html" class="button">
+            <img src="Front-end files/budget_icon.png" alt="Budget Icon"> Budget
+        </a>
+        <a href="expenses.html" class="button">
+            <img src="Front-end files/expenses_icon.png" alt="Expenses Icon"> Expenses
+        </a>
+        <a href="ButtonFiles/tips_page.html" class="button">
+            <img src="Front-end files/tips_icon.png" alt="Tips Icon"> Tips
+        </a>
+        <a href="help.html" class="button">
+            <img src="Front-end files/help_icon.png" alt="Help Icon"> Help
+        </a>
+    </div>
 </body>
 </html>
