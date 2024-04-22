@@ -43,6 +43,28 @@
     color: black;
     border-radius: 5px;
   }
+  .button {
+  display: inline-block; /* Allows the button to be only as wide as its content */
+  margin: 20px auto; /* Centers the button and adds vertical spacing */
+  padding: 10px 20px; /* Adequate padding for button content */
+  text-align: center;
+  background-color: rgba(46, 58, 140, 0.6); /* Faded blue using RGBA for transparency */
+  color: white; /* White text color for contrast */
+  border-radius: 5px; /* Slightly rounded corners for a subtle effect */
+  text-decoration: none; /* Removes underline from links */
+  font-size: 16px; /* Slightly smaller font size for a compact appearance */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.button:hover {
+  background-color: rgba(46, 58, 140, 0.8); /* Darker blue on hover for interaction feedback */
+}
+
+.container {
+  text-align: center;
+  width: 80%; /* Optionally, you can control the width of the container for alignment */
+  margin: 0 auto; /* Centers the container within the body */
+}
 </style>
 </head>
 <body>
@@ -77,10 +99,12 @@
   <div class="content">
     <p>Enhance your travel experience by learning key phrases in the local language. Even basic communication skills can improve interactions and show respect for the local culture.</p>
   </div>
+    <p><a href="../home.html" class="button">Back to Home</a></p>
   
 
 
 </div>
+
 
 <script>
 var coll = document.getElementsByClassName("collapsible");
