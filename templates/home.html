@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelEZ</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>TravelEZ</h1>
+        <a href="{{ url_for('budget') }}" class="button">
+            <img src="{{ url_for('static', filename='images/budget_icon.png') }}" alt="Budget Icon"> Budget
+        </a>
+        <a href="{{ url_for('expenses') }}" class="button">
+            <img src="{{ url_for('static', filename='images/expenses_icon.png') }}" alt="Expenses Icon"> Expenses
+        </a>
+        <a href="{{ url_for('tips') }}" class="button">
+            <img src="{{ url_for('static', filename='images/tips_icon.png') }}" alt="Tips Icon"> Tips
+        </a>
+    </div>
+</body>
+</html>

@@ -8,8 +8,8 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open <!DOCTYPE html>.html",
-            "file": "/Users/gustavogabaldon/Desktop/TravelEZ/<!DOCTYPE html>.html"
+            "name": "Open home.html",
+            "file": "/Users/gustavogabaldon/Desktop/TravelEZ/home.html"
         }
     ]
 }
