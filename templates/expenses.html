@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Analysis - TravelEZ</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Analysis</h1>
+        <p>This page analyzes expenses using different sorting algorithms and shows the top and bottom 5 indices after sorting.</p>
+
+        <h2>Sorting Time Comparison</h2>
+        <p>Heap Sort Time: <span>{{ heap_time }} seconds</span></p>
+        <p>Quick Sort Time: <span>{{ quick_time }} seconds</span></p>
+
+
+        <div class="sort-results">
+            <h3>Heap Sort - Most and Least Expensive Countries</h3>
+            <p>Most Expensive:</p>
+            <ul>
+                {% for country, index in most_expensive_heap %}
+                <li>Cost of Living Index: {{ index }} - {{ country }}</li>
+                {% endfor %}
+            </ul>
+            <p>Least Expensive:</p>
+            <ul>
+                {% for country, index in least_expensive_heap %}
+                <li>Cost of Living Index: {{ index }} - {{ country }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="sort-results">
+            <h3>Quick Sort - Most and Least Expensive Countries</h3>
+            <p>Most Expensive:</p>
+            <ul>
+                {% for country, index in most_expensive_quick %}
+                <li>Cost of Living Index: {{ index }} - {{ country }}</li>
+                {% endfor %}
+            </ul>
+            <p>Least Expensive:</p>
+            <ul>
+                {% for country, index in least_expensive_quick %}
+                <li>Cost of Living Index: {{ index }} - {{ country }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <p><a href="{{ url_for('home') }}" class="button">Back to Home</a></p>
+    </div>
+</body>
+</html>
