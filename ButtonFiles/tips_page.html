@@ -28,7 +28,7 @@
     outline: none;
     font-size: 18px;
     border-radius: 5px;
-    margin-bottom: 5px; /* Space between buttons */
+    margin-bottom: 5px; 
   }
 
   .active, .collapsible:hover {
@@ -43,6 +43,28 @@
     color: black;
     border-radius: 5px;
   }
+  .button {
+  display: inline-block; 
+  margin: 20px auto; 
+  padding: 10px 20px; 
+  text-align: center;
+  background-color: rgba(46, 58, 140, 0.6); 
+  color: white; 
+  border-radius: 5px; 
+  text-decoration: none; 
+  font-size: 16px; 
+  transition: background-color 0.3s; 
+}
+
+.button:hover {
+  background-color: rgba(46, 58, 140, 0.8); 
+}
+
+.container {
+  text-align: center;
+  width: 80%; 
+  margin: 0 auto; 
+}
 </style>
 </head>
 <body>
@@ -55,32 +77,34 @@
   </div>
   <button type="button" class="collapsible">Get Your Vaccinations</button>
   <div class="content">
-    <p>Traveling out of season can significantly reduce your expenses. Flights and accommodations are often much cheaper, and you'll avoid the crowds. Make sure to research the off-peak times for your destination.</p>
+    <p>Ensure your health and safety by getting the necessary vaccinations well in advance of your trip. Check with health professionals or travel clinics for destination-specific advice.</p>
   </div>
   <button type="button" class="collapsible">Make Copies of Important Documents</button>
   <div class="content">
-    <p>Traveling out of season can significantly reduce your expenses. Flights and accommodations are often much cheaper, and you'll avoid the crowds. Make sure to research the off-peak times for your destination.</p>
+    <p>Keep digital and physical copies of your passport, visa, travel insurance, and other critical documents. Store a set online and another with a trusted friend or relative.</p>
   </div>
   <button type="button" class="collapsible">Book Flights Early</button>
   <div class="content">
-    <p>Traveling out of season can significantly reduce your expenses. Flights and accommodations are often much cheaper, and you'll avoid the crowds. Make sure to research the off-peak times for your destination.</p>
+    <p>Booking your flights early can help you secure the best rates and preferred seating. Early reservations often yield better deals and more flight options.</p>
   </div>
   <button type="button" class="collapsible">Be Aware of Your Surroundings</button>
   <div class="content">
-    <p>Traveling out of season can significantly reduce your expenses. Flights and accommodations are often much cheaper, and you'll avoid the crowds. Make sure to research the off-peak times for your destination.</p>
+    <p>Stay safe by being observant and cautious in unfamiliar places. Keep an eye on your belongings, stay informed about the local area, and avoid risky situations.</p>
   </div>
   <button type="button" class="collapsible">Pack Light</button>
   <div class="content">
-    <p>Traveling out of season can significantly reduce your expenses. Flights and accommodations are often much cheaper, and you'll avoid the crowds. Make sure to research the off-peak times for your destination.</p>
+    <p>Travel easier by packing only the essentials. A lighter suitcase means easier mobility and often lower baggage fees. It also simplifies your packing and unpacking process.</p>
   </div>
   <button type="button" class="collapsible">Learn the Language</button>
   <div class="content">
-    <p>Traveling out of season can significantly reduce your expenses. Flights and accommodations are often much cheaper, and you'll avoid the crowds. Make sure to research the off-peak times for your destination.</p>
+    <p>Enhance your travel experience by learning key phrases in the local language. Even basic communication skills can improve interactions and show respect for the local culture.</p>
   </div>
+    <p><a href="../home.html" class="button">Back to Home</a></p>
   
 
 
 </div>
+
 
 <script>
 var coll = document.getElementsByClassName("collapsible");
